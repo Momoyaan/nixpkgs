@@ -17,12 +17,12 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "wwp-switcher";
-  version = "0-unstable-2024-07-23";
+  version = "0-unstable-2025-10-15";
 
   src = fetchFromGitHub {
-    owner = "wb9688";
+    owner = "Momoyaan";
     repo = "wwp-switcher";
-    rev = "d0cd97534a2a6355697efecb7bcf8f85f5dc4b5b";
+    rev = "7d964f11e129c86b2cc6cae4fa76533b5ccf1e23";
     hash = "sha256-cU8INUb+JXlSCM7cAOUBU7z7W0IM6pAGN0izGdFYntc=";
   };
 
@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
   passthru.updateScript = unstableGitUpdater { };
 
   meta = {
-    homepage = "https://github.com/wb9688/wwp-switcher";
+    homepage = "https://github.com/Momoyaan/wwp-switcher";
     description = "Plugin to switch active window";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wineee ];
